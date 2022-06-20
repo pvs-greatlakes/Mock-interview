@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov  4 07:58:40 2020
+Created on Wed Jun 20 07:58:40 2022
 
 @author: PVS
 """
@@ -11,8 +11,9 @@ import sys, os
 import random
 import string
 import mysql.connector
+# pip install mysql-connector-python 
+folder_name = r'D:\GL\Interview_DSE\Mock-interview-main'
 
-folder_name = r'D:\GL_DSE_Interview\Skill_Assessment_CSI'
 sys.path.insert(0, folder_name) 
 
 now = datetime.now()
