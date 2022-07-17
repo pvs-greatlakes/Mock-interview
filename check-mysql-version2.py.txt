@@ -1,0 +1,16 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import sys
+import mysql.connector 
+from   mysql.connector import errorcode
+
+cnx = mysql.connector.connect(host = "localhost",user = "testUser", password = "A4min@123", database = "hr")
+cur = cnx.cursor()
+cur.execute("SELECT VERSION()")
+data = cur.fetchone()
+print("Database version : %s " % data)
+### Close the db connection
+cnx.close()
+ 
+#### ---- END ---- ##########################
